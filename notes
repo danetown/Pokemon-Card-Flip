@@ -1,0 +1,86 @@
+https: //www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-push-an-existing-project-to-GitHub;
+  digital resume rfid;
+
+vs-code terminal
+
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Air-de-Julyna:Digital Clock julynabreandagomes$  git config --global user.email "gordondane89@gmail.com"
+Air-de-Julyna:Digital Clock julynabreandagomes$ git config --global user.email "gordondane89@gmail.com"
+Air-de-Julyna:Digital Clock julynabreandagomes$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/danetown/project1
+   a705cd8..5845923  master     -> origin/master
+Updating a705cd8..5845923
+Fast-forward
+ digital.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Air-de-Julyna:Digital Clock julynabreandagomes$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   digital.css
+
+Air-de-Julyna:Digital Clock julynabreandagomes$ git fetch
+From https://github.com/danetown/project1
+ * [new branch]      Test       -> origin/Test
+Air-de-Julyna:Digital Clock julynabreandagomes$ git branch -a
+* master
+  remotes/origin/Test
+  remotes/origin/master
+Air-de-Julyna:Digital Clock julynabreandagomes$ git checkout -b test
+Switched to a new branch 'test'
+Air-de-Julyna:Digital Clock julynabreandagomes$ git branch -a
+  master
+* test
+  remotes/origin/Test
+  remotes/origin/master
+Air-de-Julyna:Digital Clock julynabreandagomes$ git checkout master
+M       digital.css
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Air-de-Julyna:Digital Clock julynabreandagomes$ bit branch -b
+bash: bit: command not found
+Air-de-Julyna:Digital Clock julynabreandagomes$ git branch -D
+fatal: branch name required
+Air-de-Julyna:Digital Clock julynabreandagomes$ git branch -D test
+Deleted branch test (was 5845923).
+Air-de-Julyna:Digital Clock julynabreandagomes$ git checkout -b test remotes/origin/Test
+M       digital.css
+Branch 'test' set up to track remote branch 'Test' from 'origin'.
+Switched to a new branch 'test'
+Air-de-Julyna:Digital Clock julynabreandagomes$ git fetch
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 1), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/danetown/project1
+   5845923..135f71b  Test       -> origin/Test
+Air-de-Julyna:Digital Clock julynabreandagomes$ git pull
+Updating 5845923..135f71b
+error: Your local changes to the following files would be overwritten by merge:
+        digital.css
+Please commit your changes or stash them before you merge.
+Aborting
+Air-de-Julyna:Digital Clock julynabreandagomes$ git stash
+Saved working directory and index state WIP on test: 5845923 Pushing first change
+Air-de-Julyna:Digital Clock julynabreandagomes$ git pull
+Updating 5845923..135f71b
+Fast-forward
+ digital.css  | 3 +++
+ digital.html | 8 +-------
+ digital.js   | 1 +
+ 3 files changed, 5 insertions(+), 7 deletions(-)
+Air-de-Julyna:Digital Clock julynabreandagomes$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Air-de-Julyna:Digital Clock julynabreandagomes$ 
